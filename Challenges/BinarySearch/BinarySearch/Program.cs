@@ -11,7 +11,12 @@ namespace BinarySearch
             Console.WriteLine($"Search One: {ArrayBinarySearch(testArrayOne, 15)}");
             Console.WriteLine($"Search Two: {ArrayBinarySearch(testArrayTwo, 11)}");
         }
-
+        /// <summary>
+        /// Searches for a target value inside a sorted array
+        /// </summary>
+        /// <param name="arr">A sorted array</param>
+        /// <param name="target">An integer</param>
+        /// <returns>Returns the index of the target value or -1</returns>
         public static int ArrayBinarySearch(int[] arr, int target)
         {
             int start = - 1;

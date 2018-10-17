@@ -9,4 +9,4 @@ Big O Time: O(n) // Big O Space: O(1)
 - Space is O(1) because there is no additional memory allocated.
 
 ##
-![WhiteBoard](../../assets/FindKthElement-Whiteboard.pdf)
+![WhiteBoard](../../assets/FindKthElement-Whiteboard.jpg)

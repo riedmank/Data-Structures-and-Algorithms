@@ -8,8 +8,8 @@
 
 3. [Challenge: Array Binary Search](Challenges/BinarySearch)
 
-4. [Implementation: Linked List](#)
+4. [Implementation: Linked List](Data-Structures/LinkedList)
 
-5. [Challenge 5](#)
+5. [Challenge: Kth Element](Challenges/FindKthElement)
 
-6. [Challenge 6](#)
+6. [Challenge: Zipper Merge](#)

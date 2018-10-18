@@ -7,6 +7,9 @@ namespace LLMergeTests
 {
     public class UnitTest1
     {
+        /// <summary>
+        /// Tests if two linked lists of the same length can be merged
+        /// </summary>
         [Fact]
         public void CanMergeLinkedListSameLength()
         {
@@ -38,6 +41,9 @@ namespace LLMergeTests
             Assert.NotEqual(LL1Node3, LL1Node2.Next);
         }
 
+        /// <summary>
+        /// Tests if a longer linked list can be merged with a shorter linked list
+        /// </summary>
         [Fact]
         public void CanMergeLinkedListFirstListLonger()
         {
@@ -73,6 +79,9 @@ namespace LLMergeTests
             Assert.NotEqual(LL1Node3, LL1Node2.Next);
         }
 
+        /// <summary>
+        /// Tests if a shorter linked list can be merged with a longer linked list
+        /// </summary>
         [Fact]
         public void CanMergeLinkedListSecondListLonger()
         {

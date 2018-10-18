@@ -48,6 +48,12 @@ namespace LL_merge
             LLNew.Print();
         }
 
+        /// <summary>
+        /// Merges two linked lists
+        /// </summary>
+        /// <param name="LL1">A linked list</param>
+        /// <param name="LL2">A linked list</param>
+        /// <returns>Returns a merged linked list</returns>
         public static LL LLMerge(LL LL1, LL LL2)
         {
             LL1.Current = LL1.Head;

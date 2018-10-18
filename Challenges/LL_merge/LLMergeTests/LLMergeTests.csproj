@@ -16,4 +16,10 @@
     <ProjectReference Include="..\LL_merge\LL_merge.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="LinkedList">
+      <HintPath>..\..\..\Data-Structures\LinkedList\LinkedList\bin\Debug\netcoreapp2.1\LinkedList.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

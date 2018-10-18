@@ -3,9 +3,9 @@ using System;
 
 namespace LL_merge
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Node LL1Node1 = new Node("LL1Node1");
             Node LL1Node2 = new Node("LL1Node2");

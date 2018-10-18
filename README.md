@@ -12,4 +12,4 @@
 
 5. [Challenge: Kth Element](Challenges/FindKthElement)
 
-6. [Challenge: Zipper Merge](#)
+6. [Challenge: Zipper Merge](Challenges/LL_merge)

@@ -41,11 +41,11 @@ namespace LL_merge
 
             LL2.Print();
 
-            LL LLNew = LLMerge(LL1, LL2);
+            LLMerge(LL1, LL2);
 
             Console.WriteLine("");
 
-            LLNew.Print();
+            LL1.Print();
         }
 
         /// <summary>

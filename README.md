@@ -13,3 +13,5 @@
 5. [Challenge: Kth Element](Challenges/FindKthElement)
 
 6. [Challenge: Zipper Merge](Challenges/LL_merge)
+
+7. [Challenge: Palindrome](Challenges/LL_Palindrome)

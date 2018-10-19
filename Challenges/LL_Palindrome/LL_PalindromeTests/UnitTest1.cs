@@ -7,6 +7,9 @@ namespace LL_PalindromeTests
 {
     public class UnitTest1
     {
+        /// <summary>
+        /// Tests to see if an even numbered Linked List is a palindrome
+        /// </summary>
         [Fact]
         public void EvenLetterPalindromeTest()
         {
@@ -28,6 +31,9 @@ namespace LL_PalindromeTests
             Assert.True(PalindromeChecker(LL1));
         }
 
+        /// <summary>
+        /// Test to see if an odd numbered Linked List is a palindrome
+        /// </summary>
         [Fact]
         public void OddLetterPalindromeTest()
         {
@@ -51,6 +57,9 @@ namespace LL_PalindromeTests
             Assert.True(PalindromeChecker(LL1));
         }
 
+        /// <summary>
+        /// Checks to make sure that a linked list is not a palindrome
+        /// </summary>
         [Fact]
         public void NotAPalindromeTest()
         {

@@ -43,6 +43,11 @@ namespace LL_Palindrome
             Console.WriteLine(PalindromeChecker(LL2));
         }
 
+        /// <summary>
+        /// Checks to see if a linked list is a palindrome
+        /// </summary>
+        /// <param name="LL">Takes a Linked List</param>
+        /// <returns>Returns a true if the linked list is a palindrome otherwise returns false</returns>
         public static bool PalindromeChecker(LL LL)
         {
             LL.Current = LL.Head;

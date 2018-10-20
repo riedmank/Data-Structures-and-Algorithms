@@ -28,8 +28,7 @@ namespace StacksAndQueues
             Node node10 = new Node("node10");
 
             Queue Queue = new Queue(node6);
-
-            //Queue.Enqueue(node6);
+            
             Queue.Enqueue(node7);
             Queue.Enqueue(node8);
             Queue.Enqueue(node9);

@@ -6,6 +6,9 @@ namespace StacksAndQueuesTests
 {
     public class UnitTest1
     {
+        /// <summary>
+        /// Tests to see if a node can be Pushed to a Stack
+        /// </summary>
         [Fact]
         public void CanPushToStack()
         {
@@ -24,6 +27,9 @@ namespace StacksAndQueuesTests
             Assert.Equal(node1, Stack.Peek());
         }
 
+        /// <summary>
+        /// Tests to see if a node can be Popped from a Stack
+        /// </summary>
         [Fact]
         public void CanPopFromStack()
         {
@@ -44,6 +50,9 @@ namespace StacksAndQueuesTests
             Assert.Equal(node2, Stack.Peek());
         }
 
+        /// <summary>
+        /// Tests to see if the Top node of a Stack can be Peeked at
+        /// </summary>
         [Fact]
         public void CanPeekAtTopOfStack()
         {
@@ -62,6 +71,9 @@ namespace StacksAndQueuesTests
             Assert.Equal(node1, Stack.Peek());
         }
 
+        /// <summary>
+        /// Tests to see if a node can be Enqueued to a Queue
+        /// </summary>
         [Fact]
         public void CanEnqueueToQueue()
         {
@@ -79,6 +91,9 @@ namespace StacksAndQueuesTests
             Assert.Equal(node4, Queue.Rear);
         }
 
+        /// <summary>
+        /// Tests to see if a node can be Dequeued from a Queue
+        /// </summary>
         [Fact]
         public void CanDequeueFromQueue()
         {
@@ -98,6 +113,9 @@ namespace StacksAndQueuesTests
             Assert.Equal(node2, Queue.Front);
         }
 
+        /// <summary>
+        /// Tests to see if the Front node of a Queue can be Peeked at
+        /// </summary>
         [Fact]
         public void CanPeekAtFrontOfQueue()
         {

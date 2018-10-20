@@ -11,6 +11,12 @@ A Stack has a Top property which is the Node at the top of the Stack. A Stack's 
 A Queue has a Front property, the first node in the Queue, and a Rear property, the last node in the Queue. A Queue's Constructor requires a node to be set as the Front and the Rear. Queues have three methods: Enqueue, Dequeue, and Peek. Peek looks at the first node of the Queue, Enqueue adds a node to the Rear of the Queue, Dequeue removes the Front node from the Queue.
 
 ## Use Cases
-
+### Stacks
+- Back/Forward functionality on web browsers
+- A garage that is only one car wide: you have to remove the first two cars to get to the third car
+### Queues
+- CPU/Disk scheduling: when multiple processes require CPU at the same time
+- Call center phone systems to hold people in line until a representative is free
 
 ## Visual
+![Stack and Queue Visual](StackAndQueueVisual.png)

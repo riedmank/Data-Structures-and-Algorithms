@@ -3,9 +3,9 @@ Contained here is an accumulation of different Data Structure and Algorithm impl
 
 ## Table of Contents
 
-1.[Linked List](Data-Structures/LinkedList)
+1.[Linked List](LinkedList)
 
-2.[Stacks & Queues](Data-Structures/StacksAndQueues)
+2.[Stacks & Queues](StacksAndQueues)
 
 3.[Trees]()
 

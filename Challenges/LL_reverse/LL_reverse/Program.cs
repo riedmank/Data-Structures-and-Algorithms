@@ -31,6 +31,10 @@ namespace LL_reverse
 
         public static LL ReverseLL(LL LL)
         {
+            if (LL.Head == null)
+            {
+                return null;
+            }
             LL.Current = LL.Head;
             Node currNode = LL.Head;
             Node nextNode = null;

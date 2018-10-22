@@ -15,3 +15,5 @@
 6. [Challenge: Zipper Merge](Challenges/LL_merge)
 
 7. [Challenge: Palindrome](Challenges/LL_Palindrome)
+
+8. [Challenge: Reverse Linked List](Challenges/LL_reverse)

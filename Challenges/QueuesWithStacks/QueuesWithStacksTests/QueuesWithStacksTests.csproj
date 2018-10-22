@@ -12,4 +12,14 @@
     <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\QueuesWithStacks\QueuesWithStacks.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="StacksAndQueues">
+      <HintPath>..\..\..\Data-Structures\StacksAndQueues\StacksAndQueues\bin\Debug\netcoreapp2.1\StacksAndQueues.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

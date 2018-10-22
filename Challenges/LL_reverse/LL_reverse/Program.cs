@@ -29,6 +29,11 @@ namespace LL_reverse
             LL1.Print();
         }
 
+        /// <summary>
+        /// Reverses a Linked List
+        /// </summary>
+        /// <param name="LL">Takes in a Linked List</param>
+        /// <returns>Returns a reversed Linked List</returns>
         public static LL ReverseLL(LL LL)
         {
             if (LL.Head == null)

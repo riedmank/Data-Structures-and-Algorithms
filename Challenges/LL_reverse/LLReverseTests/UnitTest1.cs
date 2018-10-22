@@ -7,6 +7,9 @@ namespace LLReverseTests
 {
     public class UnitTest1
     {
+        /// <summary>
+        /// Tests if an Even Linked List can be reversed
+        /// </summary>
         [Fact]
         public void CanReverseEvenLinkedList()
         {
@@ -26,6 +29,9 @@ namespace LLReverseTests
             Assert.Equal(LL1.Head.Value, LL2.Head.Value);
         }
 
+        /// <summary>
+        /// Tests if an Odd Linked List can reversed
+        /// </summary>
         [Fact]
         public void CanReverseOddLinkedList()
         {
@@ -47,6 +53,9 @@ namespace LLReverseTests
             Assert.Equal(LL1.Head.Value, LL2.Head.Value);
         }
 
+        /// <summary>
+        /// Tests if a null Linked List cannot be reversed
+        /// </summary>
         [Fact]
         public void NullLinkedList()
         {

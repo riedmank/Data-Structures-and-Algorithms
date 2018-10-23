@@ -1,6 +1,7 @@
 using System;
 using Xunit;
 using static FIFOAnimalShelter.Program;
+using FIFOAnimalShelter.Classes;
 
 namespace AnimalShelterTests
 {

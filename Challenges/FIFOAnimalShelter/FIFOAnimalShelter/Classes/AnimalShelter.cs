@@ -45,11 +45,7 @@ namespace FIFOAnimalShelter.Classes
         public Animal Dequeue(string target)
         {
             Animal result;
-            if (Front == null)
-            {
-                return null;
-            } 
-            else if (Front.AnimalType == target)
+            if (Front.AnimalType == target)
             {
                 return Dequeue();
             }
@@ -61,6 +57,10 @@ namespace FIFOAnimalShelter.Classes
             while (target != Front.AnimalType)
             {
                 Enqueue(Dequeue());
+                if (temp == Front)
+                {
+                    return Dequeue();
+                }
             }
             result = Dequeue();
             while (Front != temp)

@@ -17,3 +17,5 @@
 7. [Challenge: Palindrome](Challenges/LL_Palindrome)
 
 8. [Challenge: Reverse Linked List](Challenges/LL_reverse)
+
+9. [Challenge: Queue with Stacks](Challenge/QueuesWithStacks)

@@ -18,4 +18,4 @@
 
 8. [Challenge: Reverse Linked List](Challenges/LL_reverse)
 
-9. [Challenge: Queue with Stacks](Challenge/QueuesWithStacks)
+9. [Challenge: Queue with Stacks](Challenges/QueuesWithStacks)

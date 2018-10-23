@@ -4,20 +4,15 @@ using System.Text;
 
 namespace FIFOAnimalShelter.Classes
 {
-    class AnimalShelter
+    public class AnimalShelter
     {
         public Animal Front { get; set; }
         public Animal Rear { get; set; }
 
-        public AnimalShelter(Animal front, Animal rear)
+        public AnimalShelter(Animal animal)
         {
-            Front = front;
-            Rear = rear;
-        }
-
-        public Animal Peek()
-        {
-            return Front;
+            Front = animal;
+            Rear = animal;
         }
 
         public void Enqueue(Animal animal)
@@ -32,6 +27,34 @@ namespace FIFOAnimalShelter.Classes
             Front = Front.Next;
             temp.Next = null;
             return temp;
+        }
+
+        public Animal Dequeue(string target)
+        {
+            Animal result;
+            if (Front == null)
+            {
+                return null;
+            } 
+            else if (Front.AnimalType == target)
+            {
+                return Dequeue();
+            }
+            else if (target != "cat" && target != "dog")
+            {
+                return Dequeue();
+            }
+            Animal temp = Front;
+            while (target != Front.AnimalType)
+            {
+                Enqueue(Dequeue());
+            }
+            result = Dequeue();
+            while (Front != temp)
+            {
+                Enqueue(Dequeue());
+            }
+            return result;
         }
     }
 }

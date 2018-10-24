@@ -45,5 +45,15 @@ namespace MultiBracketValidationTests
             string test = "[{(Wish I were playing the Witcher)}]";
             Assert.True(MultiBracketValidationMethod(test));
         }
+
+        /// <summary>
+        /// Tests to ensure false is returned with mismatched brackets, curlies, or parans
+        /// </summary>
+        [Fact]
+        public void CanReturnFalseWithMismatchedBCP()
+        {
+            string test = "[{(But I have homework]})";
+            Assert.False(MultiBracketValidationMethod(test));
+        }
     }
 }

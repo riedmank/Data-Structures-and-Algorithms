@@ -6,7 +6,19 @@ namespace MultiBracketValidation
     {
         public static void Main(string[] args)
         {
-            
+            string test1 = "(Vampire)";
+            string test2 = "[Werewolf]";
+            string test3 = "{Ghoul}";
+            string test4 = "({[Dracolisk)";
+
+            Console.WriteLine($"Test 1 expected to Pass: {test1}");
+            Console.WriteLine(MultiBracketValidationMethod(test1));
+            Console.WriteLine($"Test 2 expected to Pass: {test2}");
+            Console.WriteLine(MultiBracketValidationMethod(test2));
+            Console.WriteLine($"Test 3 expected to Pass: {test3}");
+            Console.WriteLine(MultiBracketValidationMethod(test3));
+            Console.WriteLine($"Test 4 expected to Fail: {test4}");
+            Console.WriteLine(MultiBracketValidationMethod(test4));
         }
 
         /// <summary>
@@ -14,7 +26,7 @@ namespace MultiBracketValidation
         /// </summary>
         /// <param name="value">Takes in a string</param>
         /// <returns>Returns true if there are pairs and false if there aren't</returns>
-        public static bool MultiBracketValidation(string value)
+        public static bool MultiBracketValidationMethod(string value)
         {
             int bracket = 0;
             int curly = 0;

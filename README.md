@@ -19,3 +19,7 @@
 8. [Challenge: Reverse Linked List](Challenges/LL_reverse)
 
 9. [Challenge: Queue with Stacks](Challenges/QueuesWithStacks)
+
+10. [Challenge: Animal Shelter](Challenges/FIFOAnimalShelter)
+
+11. [Challenge: Multi Bracket Validation](Challenges/MultiBracketValidation)

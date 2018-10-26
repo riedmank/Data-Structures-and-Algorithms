@@ -64,7 +64,7 @@ namespace EenieMeenieMeineMoeTests
         }
 
         /// <summary>
-        /// Tests that null is returned if a number less than one is passed in
+        /// Tests that null is returned if the number is less than one is passed in
         /// </summary>
         [Fact]
         public void CanReturnNullWithNegativeNumber()

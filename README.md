@@ -8,18 +8,22 @@
 
 3. [Challenge: Array Binary Search](Challenges/BinarySearch)
 
-4. [Implementation: Linked List](Data-Structures/LinkedList)
+4. [Challenge: Fibonacci Sequence](Challenges/fibonacciSequence)
 
-5. [Challenge: Kth Element](Challenges/FindKthElement)
+5. [Implementation: Linked List](Data-Structures/LinkedList)
 
-6. [Challenge: Zipper Merge](Challenges/LL_merge)
+6. [Challenge: Kth Element](Challenges/FindKthElement)
 
-7. [Challenge: Palindrome](Challenges/LL_Palindrome)
+7. [Challenge: Zipper Merge](Challenges/LL_merge)
 
-8. [Challenge: Reverse Linked List](Challenges/LL_reverse)
+8. [Challenge: Palindrome](Challenges/LL_Palindrome)
 
-9. [Challenge: Queue with Stacks](Challenges/QueuesWithStacks)
+9. [Challenge: Reverse Linked List](Challenges/LL_reverse)
 
-10. [Challenge: Animal Shelter](Challenges/FIFOAnimalShelter)
+10. [Challenge: Queue with Stacks](Challenges/QueuesWithStacks)
 
-11. [Challenge: Multi Bracket Validation](Challenges/MultiBracketValidation)
+11. [Challenge: Animal Shelter](Challenges/FIFOAnimalShelter)
+
+12. [Challenge: Multi Bracket Validation](Challenges/MultiBracketValidation)
+
+13. [Challenge: Eenie Meenie Meine Moe](Challenges/EenieMeenieMeineMoe)

@@ -48,14 +48,21 @@ namespace Tree.Classes
         /// <returns>Returns the Node of the found Value</returns>
         public Node Search(int value, Node root)
         {
-            while (value != root.Value)
+            try
             {
-                if (value == root.Value)
-                    return root;
-                if (root.Value > value)
-                    root = root.LeftChild;
-                if (root.Value < value)
-                    root = root.RightChild;
+                while (value != root.Value)
+                {
+                    if (value == root.Value)
+                        return root;
+                    if (root.Value > value)
+                        root = root.LeftChild;
+                    if (root.Value < value)
+                        root = root.RightChild;
+                }
+            }
+            catch
+            {
+                return null;
             }
             return root;
         }

@@ -49,7 +49,7 @@ namespace Tree
             {
                 Console.WriteLine($"{item.Value}");
             }
-            
+
             BT2.nodes.Clear();
 
             Console.WriteLine("===========================");
@@ -73,8 +73,8 @@ namespace Tree
             Node nodeTwo = new Node(nodeFour, nodeFive, 20);
             Node nodeOne = new Node(nodeTwo, nodeThree, 40);
 
-            BinarySearchTree BTS = new BinarySearchTree(node1);
-            BinaryTree BT = new BinaryTree(node1);
+            BinarySearchTree BTS = new BinarySearchTree(nodeOne);
+            BinaryTree BT = new BinaryTree(nodeOne);
             BT.nodes = new List<Node>();
 
             List<Node> search = BT.InOrder(nodeOne);

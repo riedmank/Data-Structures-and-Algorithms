@@ -4,9 +4,9 @@ using Tree.Classes;
 
 namespace FizzBuzzTree
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Node nodeSeven = new Node(null, null, 3);
             Node nodeSix = new Node(null, null, 5);
@@ -16,27 +16,48 @@ namespace FizzBuzzTree
             Node nodeTwo = new Node(nodeFour, nodeFive, 30);
             Node nodeOne = new Node(nodeTwo, nodeThree, 50);
 
-            FizzBuzzTree(nodeOne);
+            foreach (string item in FizzBuzzTreeMethod(nodeOne))
+            {
+                Console.WriteLine(item);
+            }
         }
 
-        public static List<Node> FizzBuzzTree(Node root)
+        /// <summary>
+        /// Takes in a Tree and determines Fizz Buzz status
+        /// </summary>
+        /// <param name="root">Root of a Binary Tree</param>
+        /// <returns>Returns a List of values from the Binary Tree</returns>
+        public static List<string> FizzBuzzTreeMethod(Node root)
         {
             BinaryTree BT = new BinaryTree(root);
             BT.nodes = new List<Node>();
-
             BT.nodes = BT.InOrder(root);
+            List<string> FizzBuzzList = new List<string>();
 
             foreach (Node node in BT.nodes)
             {
                 if (node.Value % 15 == 0)
+                {
                     Console.WriteLine("FizzBuzz");
+                    FizzBuzzList.Add("FizzBuzz");
+                }
                 else if (node.Value % 3 == 0)
+                {
                     Console.WriteLine("Fizz");
+                    FizzBuzzList.Add("Fizz");
+                }
                 else if (node.Value % 5 == 0)
+                {
                     Console.WriteLine("Buzz");
-                else Console.WriteLine(node.Value);
+                    FizzBuzzList.Add("Buzz");
+                }
+                else
+                {
+                    Console.WriteLine(node.Value);
+                    FizzBuzzList.Add(node.Value.ToString());
+                }
             }
-            return BT.nodes; 
+            return FizzBuzzList; 
         }
     }
 }

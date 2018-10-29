@@ -27,3 +27,5 @@
 12. [Challenge: Multi Bracket Validation](Challenges/MultiBracketValidation)
 
 13. [Challenge: Eenie Meenie Meine Moe](Challenges/EenieMeenieMeineMoe)
+
+14. [Challenge: Fizz Buzz Tree](Challenges/FizzBuzzTree)

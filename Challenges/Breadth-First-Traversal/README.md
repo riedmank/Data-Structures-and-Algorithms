@@ -8,4 +8,4 @@ Big O Time: O(n) // Big O Space: O(w)
 - Space is O(w) because the most amount of space we will ever need depends upon the width of the Binary Tree
 
 ## Visual
-![Breadth First Traversal](BreadthFirstTraversal-Whiteboard.jpg)
+![Breadth First Traversal](../../assets/BreadthFirstTraversal-Whiteboard.jpg)

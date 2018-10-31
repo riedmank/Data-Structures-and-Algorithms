@@ -16,9 +16,15 @@ namespace Breadth_First_Traversal
             Node nodeTwo = new Node(nodeFour, nodeFive, 4);
             Node nodeOne = new Node(nodeTwo, nodeThree, 67);
 
-            BreadthFirst(nodeOne);
+            BinaryTree BT = new BinaryTree(nodeOne);
+
+            BreadthFirst(BT.Root);
         }
 
+        /// <summary>
+        /// Performs a Breadth First Traversal of a Binary Tree
+        /// </summary>
+        /// <param name="root">Takes in the Root Node of a Binary Tree</param>
         public static void BreadthFirst(Node root)
         {
             Queue<Node> q = new Queue<Node>();

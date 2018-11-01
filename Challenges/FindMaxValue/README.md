@@ -8,4 +8,4 @@ Big O Time: O(n) // Big O Space: O(h)
 - Space is O(h) because we traverse the Binary Tree recursively
 
 ## Visual
-![Find Max Value](../../assets/FindMaxValue.jpg)
+![Find Max Value](../../assets/FindMaxValue-Whiteboard.jpg)

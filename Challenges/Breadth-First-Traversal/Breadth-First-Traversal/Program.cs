@@ -4,9 +4,9 @@ using System.Collections.Generic;
 
 namespace Breadth_First_Traversal
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Node nodeSeven = new Node(null, null, 22);
             Node nodeSix = new Node(null, null, 2);
@@ -25,26 +25,24 @@ namespace Breadth_First_Traversal
         /// Performs a Breadth First Traversal of a Binary Tree
         /// </summary>
         /// <param name="root">Takes in the Root Node of a Binary Tree</param>
-        public static void BreadthFirst(Node root)
+        public static List<Node> BreadthFirst(Node root)
         {
+            if (root == null)
+                return null;
             Queue<Node> q = new Queue<Node>();
+            List<Node> l = new List<Node>();
             q.Enqueue(root);
-            try
+            while (q.Count > 0)
             {
-                while (q.Peek() != null)
-                {
-                    Node Front = q.Dequeue();
-                    Console.WriteLine(Front.Value);
-                    if (Front.LeftChild != null)
-                        q.Enqueue(Front.LeftChild);
-                    if (Front.RightChild != null)
-                        q.Enqueue(Front.RightChild);
-                }
+                Node Front = q.Dequeue();
+                l.Add(Front);
+                Console.WriteLine(Front.Value);
+                if (Front.LeftChild != null)
+                    q.Enqueue(Front.LeftChild);
+                if (Front.RightChild != null)
+                    q.Enqueue(Front.RightChild);
             }
-            catch
-            {
-                return;
-            }
+            return l;
         }
     }
 }

@@ -8,6 +8,9 @@ namespace HashTablesTests
 {
     public class UnitTest1
     {
+        /// <summary>
+        /// Determines whether this instance [can insert into hash table].
+        /// </summary>
         [Fact]
         public void CanInsertIntoHashTable()
         {
@@ -17,6 +20,9 @@ namespace HashTablesTests
             Assert.Equal("vampire: alp", HT.Find("vampire"));
         }
 
+        /// <summary>
+        /// Determines whether this instance [can use contains method].
+        /// </summary>
         [Fact]
         public void CanUseContainsMethod()
         {
@@ -26,6 +32,9 @@ namespace HashTablesTests
             Assert.True(HT.Contains("vampire"));
         }
 
+        /// <summary>
+        /// Determines whether this instance [can use contains method with collision].
+        /// </summary>
         [Fact]
         public void CanUseContainsMethodWithCollision()
         {
@@ -36,6 +45,9 @@ namespace HashTablesTests
             Assert.True(HT.Contains("rats"));
         }
 
+        /// <summary>
+        /// Determines whether this instance [can find on hash table with collision].
+        /// </summary>
         [Fact]
         public void CanFindOnHashTableWithCollision()
         {

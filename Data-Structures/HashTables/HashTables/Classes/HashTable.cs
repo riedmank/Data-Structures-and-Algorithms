@@ -7,8 +7,16 @@ namespace HashTables.Classes
 {
     public class HashTable
     {
+        /// <summary>
+        /// The table
+        /// </summary>
         LL[] Table = new LL[1024];
 
+        /// <summary>
+        /// Adds the specified key and value to the Hash Table.
+        /// </summary>
+        /// <param name="key">The key.</param>
+        /// <param name="value">The value.</param>
         public void Add(string key, string value)
         {
             int index = GetHash(key);
@@ -19,6 +27,11 @@ namespace HashTables.Classes
                 Table[index] = new LL(node);
         }
 
+        /// <summary>
+        /// Finds the specified key.
+        /// </summary>
+        /// <param name="key">The key.</param>
+        /// <returns>Returns the key/value pair from the Hash Table</returns>
         public string Find(string key)
         {
             int index = GetHash(key);
@@ -33,6 +46,13 @@ namespace HashTables.Classes
             return null;
         }
 
+        /// <summary>
+        /// Determines whether [contains] [the specified key].
+        /// </summary>
+        /// <param name="key">The key.</param>
+        /// <returns>
+        ///   <c>true</c> if [contains] [the specified key]; otherwise, <c>false</c>.
+        /// </returns>
         public bool Contains(string key)
         {
             int index = GetHash(key);
@@ -48,6 +68,11 @@ namespace HashTables.Classes
             return false;
         }
 
+        /// <summary>
+        /// Gets the hash.
+        /// </summary>
+        /// <param name="key">The key.</param>
+        /// <returns>Returns the Hash</returns>
         public int GetHash(string key)
         {
             int index = 0;

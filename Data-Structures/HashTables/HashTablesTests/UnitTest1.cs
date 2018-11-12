@@ -25,5 +25,25 @@ namespace HashTablesTests
 
             Assert.True(HT.Contains("vampire"));
         }
+
+        [Fact]
+        public void CanUseContainsMethodWithCollision()
+        {
+            HashTable HT = new HashTable();
+            HT.Add("rats", "fleder");
+            HT.Add("stars", "garkain");
+
+            Assert.True(HT.Contains("rats"));
+        }
+
+        [Fact]
+        public void CanFindOnHashTableWithCollision()
+        {
+            HashTable HT = new HashTable();
+            HT.Add("rats", "katakan");
+            HT.Add("stars", "ekimmara");
+
+            Assert.Equal("stars: ekimmara", HT.Find("stars"));
+        }
     }
 }

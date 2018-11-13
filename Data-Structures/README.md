@@ -7,7 +7,7 @@ Contained here is an accumulation of different Data Structure and Algorithm impl
 
 2.[Stacks & Queues](StacksAndQueues)
 
-3.[Trees](Trees)
+3.[Trees](Tree)
 
 4.[Graphs]()
 

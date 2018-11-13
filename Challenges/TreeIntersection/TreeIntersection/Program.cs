@@ -30,7 +30,7 @@ namespace TreeIntersection
 
             Console.WriteLine("Values that are the same in both tree: 6, 9, 12.");
 
-            List<string> matches = TreeIntersection(BT1, BT2);
+            List<string> matches = TreeIntersectionMethod(BT1, BT2);
 
             Console.WriteLine("Tree Intersect method results:");
 
@@ -40,7 +40,13 @@ namespace TreeIntersection
             }
         }
 
-        public static List<string> TreeIntersection(BinaryTree BT1, BinaryTree BT2)
+        /// <summary>
+        /// Trees intersection method.
+        /// </summary>
+        /// <param name="BT1">The first Binary Tree.</param>
+        /// <param name="BT2">The second Binary Tree.</param>
+        /// <returns>Returns a list of shared values.</returns>
+        public static List<string> TreeIntersectionMethod(BinaryTree BT1, BinaryTree BT2)
         {
             BT1.nodes = new List<Node>();
             BT2.nodes = new List<Node>();

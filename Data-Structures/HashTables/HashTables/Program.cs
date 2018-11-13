@@ -11,22 +11,28 @@ namespace HashTables
             HashTable HT = new HashTable();
 
             HT.Add("food", "potato");
-            Console.WriteLine(HT.Contains("food"));
+            Console.WriteLine("Add: food, potato");
+            Console.WriteLine($"Found in Hash Table: {HT.Contains("food")}");
 
             HT.Add("rats", "cat");
-            Console.WriteLine(HT.Contains("rats"));
+            Console.WriteLine("Add: rats, cat");
+            Console.WriteLine($"Found in Hash Table: {HT.Contains("rats")}");
 
             HT.Add("fish", "grouper");
-            Console.WriteLine(HT.Contains("fish"));
+            Console.WriteLine("Add: fish, grouper");
+            Console.WriteLine($"Found in Hash Table: {HT.Contains("fish")}");
 
             HT.Add("car", "porshe");
-            Console.WriteLine(HT.Contains("car"));
+            Console.WriteLine("Add: car, porshe");
+            Console.WriteLine($"Found in Hash Table: {HT.Contains("car")}");
 
             HT.Add("occupation", "dentist");
-            Console.WriteLine(HT.Contains("occupation"));
+            Console.WriteLine("Add: occupation, dentist");
+            Console.WriteLine($"Found in Hash Table: {HT.Contains("occupation")}");
 
             HT.Add("star", "pulsar");
-            Console.WriteLine(HT.Contains("star"));
+            Console.WriteLine("Add: star, pulsar");
+            Console.WriteLine($"Found in Hash Table: {HT.Contains("star")}");
         }
     }
 }

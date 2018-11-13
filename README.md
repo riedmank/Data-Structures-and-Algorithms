@@ -33,3 +33,5 @@
 15. [Challenge: Breadth First Traversal](Challenges/Breadth-First-Traversal)
 
 16. [Challenge: Find Max Value](Challenges/FindMaxValue)
+
+17. [Challenge: Tree Intersection](Challenges/TreeIntersection)

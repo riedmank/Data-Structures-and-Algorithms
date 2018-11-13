@@ -7,11 +7,11 @@ Contained here is an accumulation of different Data Structure and Algorithm impl
 
 2.[Stacks & Queues](StacksAndQueues)
 
-3.[Trees]()
+3.[Trees](Trees)
 
 4.[Graphs]()
 
-5.[Hash Tables]()
+5.[Hash Tables](HashTables)
 
 6.[Selection Sort]()
 

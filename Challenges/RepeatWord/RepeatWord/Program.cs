@@ -8,9 +8,15 @@ namespace RepeatWord
         public static void Main(string[] args)
         {
             string test = "The cheese was only better than the wine.";
-            Console.WriteLine(RepeatWordMethod(test));
+            Console.WriteLine($"Sample string: {test}");
+            Console.WriteLine($"Word returned: {RepeatWordMethod(test)}");
         }
 
+        /// <summary>
+        /// Finds a repeated word in a string
+        /// </summary>
+        /// <param name="value">User provided string</param>
+        /// <returns>Returns the first repeated word</returns>
         public static string RepeatWordMethod(string value)
         {
             HashTable HT = new HashTable();

@@ -35,3 +35,5 @@
 16. [Challenge: Find Max Value](Challenges/FindMaxValue)
 
 17. [Challenge: Tree Intersection](Challenges/TreeIntersection)
+
+18. [Challenge: Repeat Word](Challenges/RepeatWord)

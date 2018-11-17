@@ -7,7 +7,7 @@ namespace UniqueCharTests
     public class UnitTest1
     {
         /// <summary>
-        /// Tests to make sure the method is not case sensitive.
+        /// Tests to make sure the method is case sensitive.
         /// </summary>
         [Fact]
         public void NotCaseSensitive()

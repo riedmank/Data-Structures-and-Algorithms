@@ -37,3 +37,5 @@
 17. [Challenge: Tree Intersection](Challenges/TreeIntersection)
 
 18. [Challenge: Repeat Word](Challenges/RepeatWord)
+
+19. [Challenge: Unique Character](Challenges/UniqueChar)

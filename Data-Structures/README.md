@@ -13,7 +13,7 @@ Contained here is an accumulation of different Data Structure and Algorithm impl
 
 5.[Hash Tables](HashTables)
 
-6.[Selection Sort]()
+6.[Insertion Sort](Sorting_Algorithms)
 
 7.[Quick Sort]()
 

@@ -34,6 +34,20 @@ namespace Sorting_Algorithms
                 Console.Write($"{item} ");
             }
             Console.WriteLine();
+            int[] arr3 = new int[] { 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 };
+            Console.WriteLine("Unsorted Array:");
+            foreach (int item in arr3)
+            {
+                Console.Write($"{item} ");
+            }
+            Console.WriteLine();
+            Console.WriteLine("Sort Array using Merge Sort:");
+            MergeSort(arr3);
+            foreach (int item in arr3)
+            {
+                Console.Write($"{item} ");
+            }
+            Console.WriteLine();
         }
 
         /// <summary>
@@ -112,6 +126,72 @@ namespace Sorting_Algorithms
             int temp = arr[i];
             arr[i] = arr[low];
             arr[low] = temp;
+        }
+
+        /// <summary>
+        /// Merge Sort Algorithm
+        /// </summary>
+        /// <param name="arr">The arr.</param>
+        public static void MergeSort(int[] arr)
+        {
+            if (arr.Length > 1)
+            {
+                // set array size
+                int leftSize = arr.Length / 2;
+                int rightSize = arr.Length - leftSize;
+
+                // copy into left array
+                int[] left = new int[leftSize];
+                Array.Copy(arr, 0, left, 0, leftSize);
+
+                // copy into right array
+                int[] right = new int[rightSize];
+                Array.Copy(arr, arr.Length / 2, right, 0, rightSize);
+
+                // MergeSort and merge
+                MergeSort(left);
+                MergeSort(right);
+                Merge(left, right, arr);
+            }
+        }
+
+        /// <summary>
+        /// Merges the arrays created in MergeSort method.
+        /// </summary>
+        /// <param name="left">The left array.</param>
+        /// <param name="right">The right array.</param>
+        /// <param name="arr">The main array created from the left and right arrays.</param>
+        /// <returns>Returns a sorted array</returns>
+        public static int[] Merge(int[] left, int[] right, int[] arr)
+        {
+            //left pointer
+            int i = 0;
+            //right pointer
+            int j = 0;
+            //end array pointer
+            int k = 0;
+
+            // confirm that array being compared still has pointers
+            while (i < left.Length && j < right.Length)
+            {
+                // if left value is less than right value, populate array and increment pointer
+                if (left[i] <= right[j])
+                    arr[k] = left[i++];
+                else
+                    arr[k] = right[j++];
+
+                // increment the pointer in the main array
+                k++;
+            }
+
+            // Copy remaining right/left array into main array
+            if (i == left.Length)
+                Array.Copy(right, j, arr, k, right.Length - j);
+            else
+                Array.Copy(left, i, arr, k, left.Length - i);
+
+            // return main array
+            return arr;
         }
     }
 }

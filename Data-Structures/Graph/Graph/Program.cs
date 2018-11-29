@@ -1,12 +1,11 @@
 ﻿using Graph.Classes;
 using System;
-using System.Collections.Generic;
 
 namespace Graph
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             GraphBuilder();
         }
@@ -21,19 +20,11 @@ namespace Graph
             Graphs myGraph = new Graphs(nodeOne);
 
             myGraph.AddEdge(nodeOne, new Tuple<Node, int>(nodeTwo, 5));
-            myGraph.AddEdge(nodeOne, new Tuple<Node, int>(nodeFive, 25));
-
-            myGraph.AddEdge(nodeTwo, new Tuple<Node, int>(nodeOne, 5));
             myGraph.AddEdge(nodeTwo, new Tuple<Node, int>(nodeThree, 10));
-
-            myGraph.AddEdge(nodeThree, new Tuple<Node, int>(nodeTwo, 10));
             myGraph.AddEdge(nodeThree, new Tuple<Node, int>(nodeFour, 15));
-
-            myGraph.AddEdge(nodeFour, new Tuple<Node, int>(nodeThree, 15));
             myGraph.AddEdge(nodeFour, new Tuple<Node, int>(nodeFive, 20));
-
             myGraph.AddEdge(nodeFive, new Tuple<Node, int>(nodeOne, 25));
-            myGraph.AddEdge(nodeFive, new Tuple<Node, int>(nodeFour, 20));
+            myGraph.AddEdge(nodeTwo, new Tuple<Node, int>(nodeFour, 17));
 
             Console.WriteLine($"Graph size: {myGraph.Size()}");
             Console.WriteLine("Graph nodes:");

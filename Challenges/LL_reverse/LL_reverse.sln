@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LL_reverse", "LL_reverse\LL_reverse.csproj", "{3D62C9F5-2D39-4DF7-88F5-442ECB773DBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LLReverseTests", "LLReverseTests\LLReverseTests.csproj", "{CF74F441-CCDF-40D2-896D-0CE5DA59F68E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LLReverseTests", "LLReverseTests\LLReverseTests.csproj", "{CF74F441-CCDF-40D2-896D-0CE5DA59F68E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

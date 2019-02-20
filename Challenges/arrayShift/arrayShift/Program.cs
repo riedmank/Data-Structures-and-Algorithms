@@ -56,9 +56,12 @@ namespace arrayShift
             // Insert old array into new array with new value in the middle index
             for (int i = 0; i < newArray.Length; i++)
             {
-                if (i == middle) newArray[i] = num;
-                else if (i < middle) newArray[i] = arr[i];
-                else newArray[i] = arr[i - 1];
+                if (i == middle)
+                    newArray[i] = num;
+                else if (i < middle)
+                    newArray[i] = arr[i];
+                else
+                    newArray[i] = arr[i - 1];
             }
             return newArray;
         }
@@ -73,9 +76,12 @@ namespace arrayShift
             // Insert old array into new array with middle value removed
             for (int i = 0; i < arr.Length; i++)
             {
-                if (i < middle) newArray[i] = arr[i];
-                else if (i == middle) continue;
-                else newArray[i - 1] = arr[i];
+                if (i < middle)
+                    newArray[i] = arr[i];
+                else if (i == middle)
+                    continue;
+                else
+                    newArray[i - 1] = arr[i];
             }
             return newArray;
         }

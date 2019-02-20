@@ -1,7 +1,7 @@
 using System;
 using Xunit;
 using LinkedList;
-using LinkedList.Classess;
+using LinkedList.Classes;
 
 namespace LinkedListTesting
 {
@@ -17,7 +17,7 @@ namespace LinkedListTesting
             Node node2 = new Node(null);
             Node node3 = new Node("Dune");
             Node node4 = new Node(value);
-            LinkedListClass LL = new LinkedListClass(node1);
+            LL LL = new LL(node1);
 
             LL.Add(node2);
             LL.Add(node3);
@@ -36,7 +36,7 @@ namespace LinkedListTesting
             Node node2 = new Node(null);
             Node node3 = new Node("Dune");
             Node node4 = new Node(value);
-            LinkedListClass LL = new LinkedListClass(node1);
+            LL LL = new LL(node1);
 
             LL.Append(node2);
             LL.Append(node3);
@@ -55,7 +55,7 @@ namespace LinkedListTesting
             Node node2 = new Node(null);
             Node node3 = new Node("Dune");
             Node node4 = new Node(value);
-            LinkedListClass LL = new LinkedListClass(node1);
+            LL LL = new LL(node1);
 
             LL.Append(node2);
             LL.Append(node3);
@@ -74,7 +74,7 @@ namespace LinkedListTesting
             Node node2 = new Node(null);
             Node node3 = new Node("Dune");
             Node node4 = new Node(value);
-            LinkedListClass LL = new LinkedListClass(node1);
+            LL LL = new LL(node1);
 
             LL.Append(node2);
             LL.Append(node3);
@@ -93,7 +93,7 @@ namespace LinkedListTesting
             Node node2 = new Node(null);
             Node node3 = new Node("Dune");
             Node node4 = new Node(value);
-            LinkedListClass LL = new LinkedListClass(node1);
+            LL LL = new LL(node1);
 
             LL.Append(node2);
             LL.Append(node3);

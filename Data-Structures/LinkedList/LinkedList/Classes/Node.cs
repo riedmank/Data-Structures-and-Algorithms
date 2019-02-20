@@ -15,5 +15,10 @@ namespace LinkedList.Classes
             Key = key;
             Value = value;
         }
+
+        public Node(object value)
+        {
+            Value = value;
+        }
     }
 }

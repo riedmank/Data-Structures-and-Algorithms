@@ -1,5 +1,5 @@
 ﻿using System;
-using LinkedList.Classess;
+using LinkedList.Classes;
 
 namespace LinkedList
 {
@@ -9,10 +9,10 @@ namespace LinkedList
         {
             Node node1 = new Node("node1");
             Node node2 = new Node("node2");
-            Node node3 = new Node(10);
+            Node node3 = new Node("node3");
             Node node4 = new Node("node4");
             Node node5 = new Node("node5");
-            LinkedListClass LL = new LinkedListClass(node1);
+            LL LL = new LL(node1);
             LL.Add(node2);
             LL.Add(node3);
             LL.Add(node4);
@@ -36,7 +36,7 @@ namespace LinkedList
             LL.AddAfter(node8, node4);
             LL.Print();
             
-            Console.WriteLine(LL.Find(10));
+            Console.WriteLine(LL.Find("node3"));
         }
     }
 }
